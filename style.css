@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+}
+.image-bg {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.44);
+}
+
+.image-bg img {
+    width: 100%;
+    height: 100%;
+    object-position: 0 -160px;
+    object-fit: cover;
+}
+.image-bg .lens {
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(12, 48, 156, 0.356);
+}
+
+.medsos {
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.medsos a {
+    display: flex;
+    gap: 10px;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-family: "poppins";
+    font-size: 14px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.536);
+}
+.medsos a i {
+    font-size: 16px;
+    margin-top: 2.5px;
+}
+
+/* END */
+.global-isi {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: flex;
+}
+
+.global-my-profile {
+    position: relative;
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+}
+.container-profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+.card {
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    animation: animcard 5s infinite;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.305);
+}
+
+@keyframes animcard {
+    from,
+    55% {
+        transform: rotate(0) translateX(0);
+    }
+    50% {
+        transform: rotate(4deg) translateX(10px);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+.container-profile .profile {
+    z-index: 99;
+    position: relative;
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.305);
+    border-radius: 10px;
+}
+
+.container-profile .profile .profile-image {
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+.container-profile .profile img {
+    width: 95%;
+    margin: 2.5%;
+    height: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.container-profile .profile p {
+    font-weight: 400;
+    font-family: "poppins";
+    margin: 0 5%;
+    font-size: 10pt;
+}
+.container-profile .profile h4 {
+    font-family: "poppins";
+    font-size: 10pt;
+    margin: 10px 5%;
+}
+.profile-image .container-bar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.container-bar .icon {
+    margin: auto;
+}
+.container-bar .icon i {
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    border-radius: 50%;
+}
+.container-bar .icon button {
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: blue;
+
+    font-family: "poppins";
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+.container-bar .icon i:hover,
+.container-bar .icon button:hover {
+    transition: 0.3s ease;
+    background-color: palevioletred;
+    color: white;
+}
+
+/* end of kiri */
+.container-kanan {
+    overflow-y: scroll;
+    flex: 1;
+    align-items: flex-start; /* Atau flex-end atau center */
+    align-content: flex-start; /* Atau flex-end atau center */
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    display: flex;
+}
+.name-big {
+    top: 150px;
+    width: 100%;
+    position: fixed;
+    font-size: 16pt;
+    font-family: "poppins";
+    font-weight: bold;
+    color: white;
+}
+.name-big h1 {
+    margin: 0;
+    margin-left: 20px;
+}
+.name-big h3 {
+    margin: 0;
+    font-size: 12pt;
+    margin-left: 20px;
+}
+.name-big h3 i {
+    color: orange;
+}
+
+.teman-profile {
+    z-index: 999;
+    margin: 0 auto;
+    width: 500px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.412);
+    display: flex;
+    background-color: white;
+}
+.teman-profile .image {
+    width: 40%;
+    height: 100%;
+}
+.teman-profile .image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teman-profile .right-profile {
+    flex: 1;
+}
+.teman-profile .right-profile h1 {
+    font-family: "poppins";
+    font-size: 14pt;
+    padding: 0;
+    margin: 10px 20px 10px 20px;
+}
+.teman-profile .right-profile span {
+    font-family: "poppins";
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    padding: 5px 10px;
+    background-color: green;
+    margin: 10px 20px 10px 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 0 20px 20px 0;
+}
+.bio-next {
+    display: flex;
+    width: 100%;
+}
+.bio-next .name {
+    width: 100px;
+    margin-left: -20px;
+}
+.bio-next ul li {
+    list-style: none;
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.alamat {
+    max-width: 120px;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.teman-profile .right-profile .telp {
+    font-family: "poppins";
+    font-size: 10pt;
+    padding: 5px 10px;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+}
+.gap {
+    width: 100%;
+    height: 270px;
+}

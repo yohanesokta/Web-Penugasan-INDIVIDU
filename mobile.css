@@ -1,0 +1,34 @@
+@media only screen and (max-width: 870px) {
+    .global-isi {
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+    .container-profile {
+        flex: 1;
+    }
+    .card,
+    .name-big,
+    .medsos {
+        display: none;
+    }
+    .container-kanan {
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .global-my-profile {
+        width: 100%;
+        height: 500px;
+    }
+    .image-bg {
+        position: fixed;
+        height: 100vh;
+    }
+    .image-bg img {
+        object-fit: cover;
+        object-position: unset;
+    }
+    .image-bg .lens {
+        height: 100vh;
+    }
+}
