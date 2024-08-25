@@ -17,7 +17,7 @@ async function load() {
     data.forEach(element => {
         component += `<div class="teman-profile">
         <div class="image">
-            <img src="${transformCloudinaryURL(element.fotoselfie, 300, 400, "fit")}"
+            <img src="${element.fotoselfie}"
                 alt="">
         </div>
         <div class="right-profile">

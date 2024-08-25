@@ -32,3 +32,16 @@
         height: 100vh;
     }
 }
+@media only screen and (max-width: 450px) {
+    .teman-profile {
+        flex-direction: column;
+        height: auto;
+    }
+    .teman-profile .image {
+        width: 100%;
+        height: 400px;
+    }
+    .teman-profile .right-profile span {
+        border-radius: 20px;
+    }
+}
