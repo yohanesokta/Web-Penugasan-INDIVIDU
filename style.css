@@ -209,6 +209,9 @@ body {
 }
 
 .teman-profile {
+    text-decoration: none;
+    position: relative;
+    color: black;
     z-index: 999;
     margin: 0 auto;
     width: 500px;
@@ -219,6 +222,30 @@ body {
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.412);
     display: flex;
     background-color: white;
+}
+.teman-hover {
+    position: relative;
+    transition: 0.3s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    top: 0;
+    display: flex;
+}
+.teman-hover:hover {
+    background-color: rgba(0, 0, 0, 0.562);
+}
+.teman-hover:hover i {
+    opacity: 1;
+}
+.teman-hover i {
+    position: absolute;
+    color: white;
+    right: 20px;
+    top: 20px;
+    font-size: 17pt;
 }
 .teman-profile .image {
     width: 40%;
@@ -285,4 +312,36 @@ body {
 .gap {
     width: 100%;
     height: 270px;
+}
+
+/* Search */
+
+.container-search {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+}
+form {
+    background-color: white;
+    margin: auto;
+    font-family: "poppins";
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+form input {
+    font-family: "poppins";
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+}
+
+form button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
 }
