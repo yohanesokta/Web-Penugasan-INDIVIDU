@@ -15,7 +15,7 @@ function cardComponent(element) {
         <img src="${element.fotoselfie}"
             alt="">
     </div>
-    <div class="right-profile">
+    <div class="right-profile" id="${element.nim}">
         <h1>${element.nama}</h1>
         <span>Kelompok ${element.kelompok}</span>
         <div class="bio-next">
@@ -94,9 +94,9 @@ form.addEventListener('submit', ev => {
             component += cardComponent(element)
         }
     })
-
     document.getElementById("container-kanan").innerHTML += component
-
+    document.getElementById("container-kanan").focus()
+    document.getElementById("container-kanan").scrollIntoView()
 })
 
 
